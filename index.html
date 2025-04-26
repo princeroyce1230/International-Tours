@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <title>International Tours</title>
+
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">International Tours</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Countries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="main-content">
+        <h1 class="main-title">Welcome to International Tours</h1>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./carousel-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./carousel-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./carousel-3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <p class="hero-description">Explore the world with us!</p>
+        <section id="countries">
+            <h2 class="secondary-title">Countries</h2>
+
+            <!--- CHINA -->
+            <div class="card" style="width: 18rem;">
+                <img src="./china-flag.jpg" class="card-img-top" alt="China Flag">
+                <div class="card-body">
+                    <h5 class="card-title">China</h5>
+                    <p class="card-text">China, the second world's most populous country, is located in East Asia. Renowned for its ancient civilization, vast territory, and rapid modernization, China's capital is Beijing. It plays a major role in global economics, technology, and culture.
+                    </p>
+                    <a href="#" class="btn btn-primary">Explore Tours</a>
+                </div>
+            </div>
+
+            <!--- PHILIPPINES -->
+
+            <div class="card" style="width: 18rem;">
+                <img src="./philippines-flag.png" class="card-img-top" alt="China Flag">
+                <div class="card-body">
+                    <h5 class="card-title">Philippines</h5>
+                    <p class="card-text">An archipelago of over 7,600 islands in Southeast Asia, the Philippines is known for its vibrant culture, tropical climate, and diverse landscapes. Its capital is Manila, and the country is famous for its beaches, rich history, and friendly people. </p>
+                    <a href="#" class="btn btn-primary">Explore Tours</a>
+                </div>
+            </div>
+
+            <!-- INDONESIA -->
+
+            <div class="card" style="width: 18rem;">
+                <img src="./indonesia-flag.jpg" class="card-img-top" alt="China Flag">
+                <div class="card-body">
+                    <h5 class="card-title">Indonesia</h5>
+                    <p class="card-text">Indonesia is the world's largest island nation, spanning more than 17,000 islands between Asia and Australia. With Jakarta as its capital, it boasts immense cultural diversity, lush rainforests, active volcanoes, and a rapidly growing economy. </p>
+                    <a href="#" class="btn btn-primary">Explore Tours</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
