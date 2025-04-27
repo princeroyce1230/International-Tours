@@ -1,160 +1,1119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Tours - Discover Asia</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <title>International Tours</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 </head>
+
 <body>
+    <!-- Header -->
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
-            <a class="navbar-brand" href="index.html">International Tours</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Countries</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact us</a>
-                    </li>
-                </ul>
+        <div class="container header-container">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path
+                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                    </path>
+                </svg>
+                <h1>World Tours</h1>
             </div>
-        </nav>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#previous-work">Previous Work</a></li>
+                    <li><a href="#china-qa">China Q&A</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Discover the World with Us</h1>
+            <p>Specialized tours to China, Philippines and Indonesia</p>
+            <button class="btn btn-primary">Book Now</button>
+        </div>
+    </section>
 
-    <main class="main-content">
-        <h1 class="main-title text-center">Welcome to International Tours!</h1>
-        <p class="main-description text-center">Explore the world with us. Discover new cultures, breathtaking landscapes, and unforgettable experiences.</p>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./carousel-1.jpg" class="d-block w-100" alt="Carousel Image 1">
+    <!-- Destinations Section -->
+    <section id="destinations" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Destinations</h2>
+
+            <div class="tabs">
+                <div class="tabs-list">
+                    <button class="tab-btn active" data-tab="china">China</button>
+                    <button class="tab-btn" data-tab="philippines">Philippines</button>
+                    <button class="tab-btn" data-tab="indonesia">Indonesia</button>
                 </div>
-                <div class="carousel-item">
-                    <img src="./carousel-2.jpg" class="d-block w-100" alt="Carousel Image 2">
+
+                <div class="tab-content active" id="china-tab">
+                    <div class="destination-grid">
+                        <div class="destination-info">
+                            <h3>Discover China</h3>
+                            <p>
+                                China, with its rich millennial history and impressive modernity, offers a unique
+                                experience for
+                                travelers. From the majestic Great Wall to the skyscrapers of Shanghai, every corner
+                                tells a
+                                fascinating story.
+                            </p>
+                            <div class="info-list">
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Recommended Dates</h4>
+                                        <p>Spring (April-May) and Fall (September-October)</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                            <path
+                                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Main Airlines</h4>
+                                        <p>Air China, China Southern, China Eastern, Hainan Airlines</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                                            <line x1="6" y1="1" x2="6" y2="4"></line>
+                                            <line x1="10" y1="1" x2="10" y2="4"></line>
+                                            <line x1="14" y1="1" x2="14" y2="4"></line>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Cuisine</h4>
+                                        <p>Peking Duck, Dim Sum, Hot Pot, Dumplings, Dan Dan Noodles</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="9" cy="7" r="4"></circle>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Customs</h4>
+                                        <p>Respect for elders, red envelopes as gifts, tea as a symbol of hospitality
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="destination-carousel">
+                            <div class="carousel">
+                                <div class="carousel-container">
+                                    <div class="carousel-slide">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <img src="https://via.placeholder.com/500x300?text=Great+Wall+of+China"
+                                                    alt="Great Wall of China">
+                                            </div>
+                                            <div class="card-footer">
+                                                <h4>Great Wall of China</h4>
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="icon">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                        <circle cx="12" cy="10" r="3"></circle>
+                                                    </svg> Near Beijing</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <img src="https://via.placeholder.com/500x300?text=Forbidden+City"
+                                                    alt="Forbidden City">
+                                            </div>
+                                            <div class="card-footer">
+                                                <h4>Forbidden City</h4>
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="icon">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                        <circle cx="12" cy="10" r="3"></circle>
+                                                    </svg> Beijing</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <img src="https://via.placeholder.com/500x300?text=Terracotta+Warriors"
+                                                    alt="Terracotta Warriors">
+                                            </div>
+                                            <div class="card-footer">
+                                                <h4>Terracotta Warriors</h4>
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="icon">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                        <circle cx="12" cy="10" r="3"></circle>
+                                                    </svg> Xi'an</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <img src="https://via.placeholder.com/500x300?text=Shanghai"
+                                                    alt="Shanghai">
+                                            </div>
+                                            <div class="card-footer">
+                                                <h4>Shanghai</h4>
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="icon">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                        <circle cx="12" cy="10" r="3"></circle>
+                                                    </svg> Eastern China</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <img src="https://via.placeholder.com/500x300?text=Zhangjiajie+Mountains"
+                                                    alt="Zhangjiajie Mountains">
+                                            </div>
+                                            <div class="card-footer">
+                                                <h4>Zhangjiajie Mountains</h4>
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="icon">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                        <circle cx="12" cy="10" r="3"></circle>
+                                                    </svg> Hunan</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-prev" aria-label="Previous slide">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="icon">
+                                        <polyline points="15 18 9 12 15 6"></polyline>
+                                    </svg>
+                                </button>
+                                <button class="carousel-next" aria-label="Next slide">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="icon">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./carousel-3.jpg" class="d-block w-100" alt="Carousel Image 3">
+
+                <div class="tab-content" id="philippines-tab">
+                    <div class="destination-grid">
+                        <div class="destination-info">
+                            <h3>Paradise in the Philippines</h3>
+                            <p>
+                                The Philippines, an archipelago of over 7,000 islands, offers some of the world's most
+                                beautiful
+                                beaches, crystal-clear waters perfect for diving, and a vibrant culture influenced by
+                                its Spanish and
+                                American history.
+                            </p>
+                            <div class="info-list">
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Recommended Dates</h4>
+                                        <p>November to April (dry season)</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                            <path
+                                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Main Airlines</h4>
+                                        <p>Philippine Airlines, Cebu Pacific, AirAsia</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                                            <line x1="6" y1="1" x2="6" y2="4"></line>
+                                            <line x1="10" y1="1" x2="10" y2="4"></line>
+                                            <line x1="14" y1="1" x2="14" y2="4"></line>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Cuisine</h4>
+                                        <p>Adobo, Lechón, Sinigang, Halo-halo, Pancit</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="9" cy="7" r="4"></circle>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Customs</h4>
+                                        <p>Mano Po (gesture of respect), barangay festivals, family karaoke</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="destination-carousel">
+                            <div class="carousel">
+                                <div class="carousel-container">
+                                    <div class="carousel-slide">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <img src="https://via.placeholder.com/500x300?text=Palawan"
+                                                    alt="Palawan">
+                                            </div>
+                                            <div class="card-footer">
+                                                <h4>Palawan</h4>
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="icon">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                        <circle cx="12" cy="10" r="3"></circle>
+                                                    </svg> Western Philippines</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <img src="https://via.placeholder.com/500x300?text=Boracay"
+                                                    alt="Boracay">
+                                            </div>
+                                            <div class="card-footer">
+                                                <h4>Boracay</h4>
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="icon">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                        <circle cx="12" cy="10" r="3"></circle>
+                                                    </svg> Aklan</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <img src="https://via.placeholder.com/500x300?text=Chocolate+Hills"
+                                                    alt="Chocolate Hills">
+                                            </div>
+                                            <div class="card-footer">
+                                                <h4>Chocolate Hills</h4>
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="icon">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                        <circle cx="12" cy="10" r="3"></circle>
+                                                    </svg> Bohol</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <img src="https://via.placeholder.com/500x300?text=Rice+Terraces"
+                                                    alt="Rice Terraces">
+                                            </div>
+                                            <div class="card-footer">
+                                                <h4>Rice Terraces</h4>
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="icon">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                        <circle cx="12" cy="10" r="3"></circle>
+                                                    </svg> Banaue</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <img src="https://via.placeholder.com/500x300?text=Manila" alt="Manila">
+                                            </div>
+                                            <div class="card-footer">
+                                                <h4>Manila</h4>
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="icon">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                        <circle cx="12" cy="10" r="3"></circle>
+                                                    </svg> Luzon</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-prev" aria-label="Previous slide">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="icon">
+                                        <polyline points="15 18 9 12 15 6"></polyline>
+                                    </svg>
+                                </button>
+                                <button class="carousel-next" aria-label="Next slide">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="icon">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="indonesia-tab">
+                    <div class="destination-grid">
+                        <div class="destination-info">
+                            <h3>Magic of Indonesia</h3>
+                            <p>
+                                Indonesia, the world's largest archipelago, offers impressive diversity: from ancient
+                                temples and
+                                active volcanoes to paradise beaches and rich marine life.
+                            </p>
+                            <div class="info-list">
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Recommended Dates</h4>
+                                        <p>May to September (dry season)</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                            <path
+                                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Main Airlines</h4>
+                                        <p>Garuda Indonesia, Lion Air, AirAsia Indonesia</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                                            <line x1="6" y1="1" x2="6" y2="4"></line>
+                                            <line x1="10" y1="1" x2="10" y2="4"></line>
+                                            <line x1="14" y1="1" x2="14" y2="4"></line>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Cuisine</h4>
+                                        <p>Nasi Goreng, Satay, Rendang, Gado-gado, Bakso</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="9" cy="7" r="4"></circle>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Customs</h4>
+                                        <p>Removing shoes when entering homes, using right hand for eating, traditional
+                                            ceremonies</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="destination-carousel">
+                            <div class="carousel">
+                                <div class="carousel-container">
+                                    <div class="carousel-slide">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <img src="https://via.placeholder.com/500x300?text=Bali" alt="Bali">
+                                            </div>
+                                            <div class="card-footer">
+                                                <h4>Bali</h4>
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="icon">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                        <circle cx="12" cy="10" r="3"></circle>
+                                                    </svg> Lesser Sunda Islands</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <img src="https://via.placeholder.com/500x300?text=Borobudur+Temple"
+                                                    alt="Borobudur Temple">
+                                            </div>
+                                            <div class="card-footer">
+                                                <h4>Borobudur Temple</h4>
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="icon">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                        <circle cx="12" cy="10" r="3"></circle>
+                                                    </svg> Java</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <img src="https://via.placeholder.com/500x300?text=Komodo" alt="Komodo">
+                                            </div>
+                                            <div class="card-footer">
+                                                <h4>Komodo</h4>
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="icon">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                        <circle cx="12" cy="10" r="3"></circle>
+                                                    </svg> Lesser Sunda Islands</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <img src="https://via.placeholder.com/500x300?text=Raja+Ampat"
+                                                    alt="Raja Ampat">
+                                            </div>
+                                            <div class="card-footer">
+                                                <h4>Raja Ampat</h4>
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="icon">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                        <circle cx="12" cy="10" r="3"></circle>
+                                                    </svg> West Papua</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <img src="https://via.placeholder.com/500x300?text=Mount+Bromo"
+                                                    alt="Mount Bromo">
+                                            </div>
+                                            <div class="card-footer">
+                                                <h4>Mount Bromo</h4>
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="icon">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                        <circle cx="12" cy="10" r="3"></circle>
+                                                    </svg> East Java</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-prev" aria-label="Previous slide">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="icon">
+                                        <polyline points="15 18 9 12 15 6"></polyline>
+                                    </svg>
+                                </button>
+                                <button class="carousel-next" aria-label="Next slide">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="icon">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-        <section id="countries">
-            <h2 class="secondary-title text-center">Countries</h2>
-            <div class="card-group">
-                <div class="row row-cols-1 row-cols-md-3">
-                    <div class="col">
-                        <div class="card">
-                            <img src="./china-flag.jpg" class="card-img-top" alt="China">
-                            <div class="card-body">
-                                <h5 class="card-title">China</h5>
-                                <p class="card-text">China, the second world’s most populous country, is located in East Asia. Renowned for its ancient civilization, vast territory, and rapid modernization, China’s capital is Beijing. It plays a major role in global economics, technology, and culture.</p>
-                                <a href="china.html" class="btn btn-primary">Explore Tours</a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-white">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Customized Tours</h3>
+                    <p>We create tailored itineraries based on your interests, time, and budget.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>Local Guides</h3>
+                    <p>Expert local guides who speak English and know the secrets of each destination.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3>Complete Bookings</h3>
+                    <p>We take care of hotels, internal transportation, and attraction tickets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Previous Work Section -->
+    <section id="previous-work" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Previous Work</h2>
+
+            <div class="tabs">
+                <div class="tabs-list">
+                    <button class="tab-btn active" data-tab="blogs">Blogs</button>
+                    <button class="tab-btn" data-tab="videos">Videos</button>
+                    <button class="tab-btn" data-tab="paragraphs">Paragraphs</button>
+                </div>
+
+                <div class="tab-content active" id="blogs-tab">
+                    <div class="blog-grid">
+                        <div class="blog-card">
+                            <div class="blog-image">
+                                <img src="https://via.placeholder.com/400x200?text=Blog:+My+Experience+in+China"
+                                    alt="Blog about China">
+                            </div>
+                            <div class="blog-content">
+                                <h3>My Experience in China</h3>
+                                <p>
+                                    A journey through the wonders of ancient Chinese civilization and its impressive
+                                    modernity. From the
+                                    Great Wall to the skyscrapers of Shanghai, China is a country of contrasts.
+                                </p>
+                                <p class="blog-date">Published: March 15, 2023</p>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="blog-image">
+                                <img src="https://via.placeholder.com/400x200?text=Blog:+Beaches+of+the+Philippines"
+                                    alt="Blog about Philippines">
+                            </div>
+                            <div class="blog-content">
+                                <h3>The Best Beaches in the Philippines</h3>
+                                <p>
+                                    Discover paradise on earth with these incredible Philippine beaches. From Boracay to
+                                    El Nido, each beach
+                                    offers a unique experience.
+                                </p>
+                                <p class="blog-date">Published: June 2, 2023</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="./indonesia-flag.jpg" class="card-img-top" alt="Indonesia">
-                            <div class="card-body">
-                                <h5 class="card-title">Indonesia</h5>
-                                <p class="card-text">Indonesia is the world’s largest island nation, spanning more than 17,000 islands between Asia and Australia. With Jakarta as its capital, it boasts immense cultural diversity, lush rainforests, active volcanoes, and a rapidly growing economy.</p>
-                                <a href="#" class="btn btn-primary">Explore Tours</a>
+                </div>
+
+                <div class="tab-content" id="videos-tab">
+                    <div class="blog-grid">
+                        <div class="blog-card">
+                            <div class="blog-image video-thumbnail">
+                                <img src="https://via.placeholder.com/400x200?text=Video:+Temples+of+Bali"
+                                    alt="Video about Bali">
+                                <div class="play-button">
+                                    <div class="play-icon"></div>
+                                </div>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Sacred Temples of Bali</h3>
+                                <p>
+                                    A visual tour of the most impressive temples on the island of Bali in Indonesia.
+                                    Discover the
+                                    spirituality and unique architecture of this paradise island.
+                                </p>
+                                <p class="blog-date">Published: April 10, 2023</p>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="blog-image video-thumbnail">
+                                <img src="https://via.placeholder.com/400x200?text=Video:+Chinese+Cuisine"
+                                    alt="Video about Chinese cuisine">
+                                <div class="play-button">
+                                    <div class="play-icon"></div>
+                                </div>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Authentic Chinese Cuisine</h3>
+                                <p>
+                                    Discover the secrets of traditional Chinese cooking, far beyond fried rice and
+                                    spring rolls. A culinary
+                                    journey through the different regions of China.
+                                </p>
+                                <p class="blog-date">Published: May 22, 2023</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="./philippines-flag.png" class="card-img-top" alt="Philippines">
-                            <div class="card-body">
-                                <h5 class="card-title">Philippines</h5>
-                                <p class="card-text">An archipelago of over 7,600 islands in Southeast Asia, the Philippines is known for its vibrant culture, tropical climate, and diverse landscapes. Its capital is Manila, and the country is famous for its beaches, rich history, and friendly people.</p>
-                                <a href="#" class="btn btn-primary">Explore Tours</a>
-                            </div>
+                </div>
+
+                <div class="tab-content" id="paragraphs-tab">
+                    <div class="paragraphs-container">
+                        <div class="paragraph-card">
+                            <h3>The Magic of Travel</h3>
+                            <p>
+                                Traveling is much more than visiting new places; it's a way to expand our mind and
+                                heart. When we immerse
+                                ourselves in different cultures, we learn to see the world from perspectives we never
+                                would have imagined.
+                                If we had stayed in our comfort zone, we would never have experienced the richness that
+                                the world has to
+                                offer.
+                            </p>
+                            <p>
+                                Asia, with its rich millennial history and ancestral traditions, offers travelers a
+                                transformative
+                                experience. From the imposing temples of Angkor Wat to the bustling streets of Tokyo,
+                                every corner tells a
+                                fascinating story that invites us to reflect on our own existence and values.
+                            </p>
+                            <p>
+                                If I had visited these places earlier, I would have understood much sooner the
+                                importance of preserving
+                                cultural diversity in an increasingly globalized world. Travel teaches us that, despite
+                                our differences, we
+                                share similar dreams, hopes, and challenges as human beings.
+                            </p>
+                        </div>
+                        <div class="paragraph-card">
+                            <h3>Respect for Local Traditions</h3>
+                            <p>
+                                When we travel to countries with cultures different from our own, it is essential to
+                                show respect for their
+                                customs and traditions. If tourists had been more aware of local norms, many cultural
+                                misunderstandings
+                                would have been avoided. In China, for example, it's important to understand concepts
+                                like "mianzi" (face or
+                                reputation) to interact properly with locals.
+                            </p>
+                            <p>
+                                In Indonesia, religion plays a fundamental role in daily life. Temples are sacred places
+                                where visitors are
+                                expected to dress modestly and follow certain rules of behavior. If we had researched
+                                these norms before our
+                                trip, our experience would have been more enriching and respectful.
+                            </p>
+                            <p>
+                                The Philippines, with its unique blend of Spanish, American, and Asian influences,
+                                teaches us the importance
+                                of cultural adaptability. If we hadn't been open to new experiences, we would have
+                                missed the opportunity to
+                                genuinely connect with the warmth and hospitality of the Filipino people.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            </section>
         </div>
+    </section>
 
-        <section id="contact">
-            <h2 class="text-center">Contact Us</h2>
-            <form class="d-flex flex-column flex-wrap align-content-center">
-                <div class="form-group my-3">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </section>
-    </main>
+    <!-- Conditional Sentences Section -->
+    <section class="section bg-white">
+        <div class="container">
+            <h2 class="section-title">Travel Reflections</h2>
 
+            <div class="reflections-grid">
+                <div class="reflection-card">
+                    <p>If you had visited the Forbidden City in Beijing last year, you would have seen the special
+                        exhibition of imperial treasures that is no longer available.</p>
+                </div>
+                <div class="reflection-card">
+                    <p>If I had known that traffic in Shanghai was so intense, I would have booked a hotel closer to the
+                        city center.</p>
+                </div>
+                <div class="reflection-card">
+                    <p>If the tourists had followed the guide's instructions, they wouldn't have missed the incredible
+                        sunset over the rice terraces in the Philippines.</p>
+                </div>
+                <div class="reflection-card">
+                    <p>If we had planned our trip during the Spring Festival, we would have experienced the Chinese New
+                        Year celebrations in all their glory.</p>
+                </div>
+                <div class="reflection-card">
+                    <p>If the weather hadn't been so humid in Bali, we would have enjoyed our hikes through the rice
+                        fields more.</p>
+                </div>
+                <div class="reflection-card">
+                    <p>If I had learned some basic Mandarin phrases before my trip, I would have communicated better
+                        with locals in rural areas of China.</p>
+                </div>
+                <div class="reflection-card">
+                    <p>If you hadn't tried authentic Peking duck in Beijing, you would have missed one of the most
+                        iconic dishes of Chinese cuisine.</p>
+                </div>
+                <div class="reflection-card">
+                    <p>If travelers had booked their tickets in advance for Borobudur Temple in Indonesia, they wouldn't
+                        have had to queue for hours.</p>
+                </div>
+                <div class="reflection-card">
+                    <p>If we had known about the monsoon season in the Philippines, we would have chosen another date to
+                        visit the beaches of Palawan.</p>
+                </div>
+                <div class="reflection-card">
+                    <p>If I had brought more formal clothes, I would have been able to enter some of Shanghai's
+                        exclusive restaurants that have a dress code.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- China Q&A Section -->
+    <section id="china-qa" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Five Places to Visit in China</h2>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What is the best time to visit the Great Wall of China?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p>The best time to visit the Great Wall of China is during spring (April-May) or autumn
+                            (September-October). During these seasons, the weather is pleasant and there are fewer
+                            tourists. If you had visited in summer, you would have experienced crowds and very high
+                            temperatures. Winters can be beautiful with snow, but very cold.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What documents do I need to travel to China?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p>To travel to China, you will need a valid passport with at least six months of validity and a
+                            Chinese visa. If you had applied for your visa well in advance, you wouldn't have had any
+                            problems at entry. It's also advisable to carry copies of your hotel reservations and a
+                            travel itinerary to show to immigration authorities if requested.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Is it safe to travel to China?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes, China is generally a very safe country for tourists. The crime rate against foreigners
+                            is low. However, as with any destination, it's important to take basic precautions. If you
+                            had been more careful with your belongings in crowded tourist areas, you wouldn't have
+                            experienced any issues with pickpockets.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What are the five must-visit places in China?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p>The five must-visit places in China are: 1) The Great Wall of China, an architectural marvel
+                            visible from space. 2) The Forbidden City in Beijing, former imperial residence. 3) The
+                            Terracotta Army in Xi'an, an impressive collection of sculptures. 4) The karst landscape of
+                            Guilin, with its unique mountain formations. 5) Shanghai, the modern metropolis showcasing
+                            China's economic development.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        How is the food in China? Is it very different from the Chinese food we know in the West?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Authentic Chinese food is very diverse and varies significantly by region. It is quite
+                            different from Westernized Chinese food. If you had tried local food in different provinces,
+                            you would have discovered unique flavors such as Sichuan spicy, Cantonese dim sum, or Xi'an
+                            noodles. The food tends to be fresher, less sweet, and with a greater variety of ingredients
+                            than the Western version.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Is it difficult to get around China without speaking Chinese?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p>It can be challenging but not impossible. In major cities and tourist areas, you will find
+                            English signage and staff who speak basic English in hotels and main attractions. If you had
+                            learned some basic Chinese phrases before your trip, you would have had a smoother
+                            experience. It's advisable to carry a translation app, have your hotel address written in
+                            Chinese characters, and use the subway, which has announcements in English.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What is the best way to pay in China?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Currently, China is practically a cashless society where mobile payments through apps like
+                            WeChat Pay and Alipay predominate. However, for tourists, it can be complicated to set up
+                            these apps. If you had brought both cash and international credit cards, you would have been
+                            prepared for any situation. International hotels and luxury stores accept cards, but many
+                            local establishments only accept cash or mobile payments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-primary">
+        <div class="container">
+            <h2 class="section-title text-white">Contact Us</h2>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-list">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <span>info@worldtours.com</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>123 Main Street, New York, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Your email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Destination of Interest</label>
+                            <select id="destination">
+                                <option value="">Select a destination</option>
+                                <option value="china">China</option>
+                                <option value="philippines">Philippines</option>
+                                <option value="indonesia">Indonesia</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="footer-brand">International Tours</div>
-                    <p class="footer-text">Creating amazing experiences and innovative solutions for our customers
-                        worldwide.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    </div>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                        </path>
+                    </svg>
+                    <h2>World Tours</h2>
                 </div>
-    
-                <div class="col-md-6 text-md-end">
-                    <ul class="footer-links">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
-                    </ul>
+                <div class="footer-copyright">
+                    <p>&copy; <span id="current-year"></span> World Tours. All rights reserved.</p>
                 </div>
-            </div>
-    
-            <div class="copyright text-center">
-                © 2025 International Tours. All rights reserved.
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
